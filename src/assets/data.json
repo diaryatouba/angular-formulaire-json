@@ -1,0 +1,153 @@
+{ "formTitle": "Formulaire",
+  "saveBtnTitle": "Valider",
+  "resetBtnTitle": "Annuler",
+    "formControls": [
+      {
+        "name": "dateOuvertureCompte",
+        "label": "Date du compte",
+        "value": "",
+        "placeHolder": "",
+        "class": "col-md-4",
+        "type": "date",
+        "validators": [
+          {
+            "validatorName": "required",
+            "required": true,
+            "message": "*La date d'ouverture du compte est requise"
+          }
+        ]
+      },
+      {
+        "name": "numeroClient",
+        "label": "Numéro de compte",
+        "value": "",
+        "placeHolder": "",
+        "class": "col-md-4",
+        "type": "number",
+        "validators": [
+          {
+            "validatorName": "required",
+            "required": true,
+            "message": "*Le numéro de compte est requis"
+          }
+        ]
+      },
+        {
+            "name": "intituleClient",
+            "label": "Intitulé du client",
+            "value": "",
+            "placeHolder": "",
+            "class": "col-md-4",
+            "type": "text",
+            "validators": [
+                {
+                    "validatorName": "required",
+                    "required": true,
+                    "message": "*L'intitulé du client est requis"
+                }
+            ]
+        },
+      {
+        "name": "codeAgence",
+        "label": "Code Agence",
+        "value": "",
+        "placeHolder": "",
+        "class": "col-md-4",
+        "type": "number",
+        "validators": [
+          {
+            "validatorName": "required",
+            "required": true,
+            "message": "*Le code agence est requis"
+          }
+        ]
+      },
+      {
+        "name": "numeroCompte",
+        "label": "Numéro de compte",
+        "value": "",
+        "placeHolder": "",
+        "class": "col-md-4",
+        "type": "number",
+        "validators": [
+          {
+            "validatorName": "required",
+            "required": true,
+            "message": "*Le numéro de compte est requis"
+          }
+        ]
+      },
+      {
+        "name": "typeCompte",
+        "label": "Type de compte",
+        "value": "",
+        "placeHolder": "",
+        "class": "col-md-4",
+        "options": [
+          { "id": 1, "value": "Courant" },
+          { "id": 2, "value": "Épargne" },
+          { "id": 3, "value": "Professionnel" }
+        ],
+        "type": "select",
+        "validators": [
+          {
+            "validatorName": "required",
+            "required": true,
+            "message": "*Le type de compte est requis"
+          }
+        ]
+      },
+        {
+            "name": "gestionnaire",
+            "label": "Gestionnaire",
+            "value": "",
+            "placeHolder": "",
+            "class": "col-md-4",
+            "type": "text",
+            "validators": [
+                {
+                    "validatorName": "required",
+                    "required": true,
+                    "message": "*Le matricule est requis"
+                }
+            ]
+        },
+
+        {
+            "name": "soldeCompte",
+            "label": "Solde du compte",
+            "value": "",
+            "placeHolder": "",
+            "class": "col-md-4",
+            "type": "number",
+            "validators": [
+                {
+                    "validatorName": "required",
+                    "required": true,
+                    "message": "*Le solde du compte est requis"
+                }
+            ]
+        },
+
+        {
+            "name": "motifCloture",
+            "label": "Motif de clôture",
+            "value": "",
+            "placeHolder": "",
+            "class": "col-md-4",
+            "options": [
+                { "id": 1, "value": "Demande du client" },
+                { "id": 2, "value": "Compte inactif" },
+                { "id": 3, "value": "Fermeture de l'agence" }
+            ],
+            "type": "select",
+            "validators": [
+                {
+                    "validatorName": "required",
+                    "required": true,
+                    "message": "*Le motif de clôture est requis"
+                }
+            ]
+        }
+    ]
+}

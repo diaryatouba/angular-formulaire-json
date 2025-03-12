@@ -5,11 +5,7 @@
   "projects": {
     "dynamic-form": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -24,15 +20,26 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "src/assets/css/app.min.css",
+              "src/assets/css/prism.css",
+              "src/assets/css/style.css",
+              "src/assets/css/theme-white.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/admin.js",
+              "src/assets/js/app.min.js",
+              "src/assets/js/prism.js"
+            ],
+            "server": "src/main.server.ts",
+            "prerender": true
           },
           "configurations": {
             "production": {
@@ -84,18 +91,29 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "assets/css/app.min.css",
+              "assets/css/prism.css",
+              "assets/css/style.css",
+              "assets/css/theme-white.css"
             ],
-            "scripts": []
+            "scripts": [
+              "assets/js/admin.js",
+              "assets/js/app.min.js",
+              "assets/js/prism.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "65bdda55-f783-446e-b94a-4d24b45418ff"
   }
 }

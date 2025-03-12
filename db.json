@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "bf26",
+      "dateOuvertureCompte": "2025-03-03",
+      "numeroClient": "234556",
+      "intituleClient": "2378399",
+      "codeAgence": "246678",
+      "numeroCompte": "237383",
+      "typeCompte": "Courant",
+      "gestionnaire": "Diaryatou",
+      "soldeCompte": "283736",
+      "motifCloture": "Demande du client"
+    },
+    {
+      "id": "52a2",
+      "dateOuvertureCompte": "2025-03-03",
+      "numeroClient": "2345677",
+      "intituleClient": "SN566654",
+      "codeAgence": "353663",
+      "numeroCompte": "34487474",
+      "typeCompte": "Professionnel",
+      "gestionnaire": "Jamil",
+      "soldeCompte": "2000000",
+      "motifCloture": "Compte inactif"
+    },
+    {
+      "id": "7b86",
+      "dateOuvertureCompte": "2025-03-04",
+      "numeroClient": "2345",
+      "intituleClient": "SN67889",
+      "codeAgence": "209876",
+      "numeroCompte": "2389087",
+      "typeCompte": "Épargne",
+      "gestionnaire": "Gabriel",
+      "soldeCompte": "3500000",
+      "motifCloture": "Demande du client"
+    }
+  ]
+}

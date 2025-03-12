@@ -1,0 +1,28 @@
+<p>Liste des utilisateurs</p>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Intitulé du client</th>
+    <th scope="col">Gestionnaire</th>
+    <th scope="col">Numéro de compte</th>
+    <th scope="col">Solde du compte</th>
+    <th scope="col">Type de compte</th>
+    <th scope="col">Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of userData">
+    <th scope="row">{{user.id}}</th>
+    <td>{{user.intituleClient}}</td>
+    <td>{{user.gestionnaire}}</td>
+    <td>{{user.numeroCompte}}</td>
+    <td>{{user.soldeCompte | currency:'CFA'}}</td>
+    <td>{{user.typeCompte}}</td>
+    <td>
+      <button (click)="editUser(user)" class="btn btn-warning btn-sm mx-1">Modifier</button>
+      <button (click)="deleteUser(user.id)" class="btn btn-danger btn-sm mx-1">Supprimer</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
